@@ -4,9 +4,6 @@ import 'package:clocustomer/features/order/view_model/orders_view_model.dart';
 import 'package:clocustomer/l10n/app_localizations.dart';
 import 'package:clocustomer/model/order_model.dart';
 import 'package:clocustomer/utils/app_colors.dart';
-import 'package:clocustomer/utils/interstitial_ad_manager.dart';
-import 'package:clocustomer/widgets/banner_ad_widget.dart';
-import 'package:clocustomer/widgets/native_ad_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -29,12 +26,6 @@ class _OrdersListScreenState extends ConsumerState<OrdersListScreen> {
       final firestore = ref.read(firestoreProvider);
       ref.read(linkedShopsProvider.notifier).loadAndLink(phone, firestore);
 
-      // Pre-load interstitial & show once per day
-      final adManager = ref.read(interstitialAdManagerProvider);
-      adManager.load();
-      Future.delayed(const Duration(seconds: 2), () {
-        adManager.showIfReady(onDone: () {});
-      });
     });
   }
 
@@ -54,20 +45,12 @@ class _OrdersListScreenState extends ConsumerState<OrdersListScreen> {
               fontWeight: FontWeight.w800, fontSize: 22, color: AppColors.dark),
         ),
       ),
-      body: Column(
-        children: [
-          Expanded(
-            child: ordersAsync.when(
-              loading: () => const Center(child: CircularProgressIndicator()),
-              error:   (e, _) => _buildError(context, l10n, e.toString()),
-              data:    (orders) => orders.isEmpty
-                  ? _buildEmpty(l10n)
-                  : _buildList(orders, l10n),
-            ),
-          ),
-          // ── Fixed banner at the bottom ───────────────────────────────
-          const BannerAdWidget(),
-        ],
+      body: ordersAsync.when(
+        loading: () => const Center(child: CircularProgressIndicator()),
+        error:   (e, _) => _buildError(context, l10n, e.toString()),
+        data:    (orders) => orders.isEmpty
+            ? _buildEmpty(l10n)
+            : _buildList(orders, l10n),
       ),
     );
   }
@@ -120,21 +103,13 @@ class _OrdersListScreenState extends ConsumerState<OrdersListScreen> {
   }
 
   Widget _buildList(List<OrderModel> orders, AppLocalizations l10n) {
-    // Build mixed list: insert a native ad after every 5th order card
-    final items = <Widget>[];
-    for (var i = 0; i < orders.length; i++) {
-      items.add(_OrderCard(
+    return ListView.builder(
+      padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+      itemCount: orders.length,
+      itemBuilder: (context, i) => _OrderCard(
         order: orders[i],
         onTap: () => context.push('/orders/detail', extra: orders[i]),
-      ));
-      // Insert native ad after every 5th item (index 4, 9, 14 …)
-      if ((i + 1) % 5 == 0) {
-        items.add(const NativeAdWidget());
-      }
-    }
-    return ListView(
-      padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-      children: items,
+      ),
     );
   }
 }

@@ -35,10 +35,6 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-        <!-- AdMob App ID -->
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-4587041607605021~4746102437"/>
     </application>
 
     <!-- Required to query activities that can process text, see:

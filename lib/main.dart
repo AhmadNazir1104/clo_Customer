@@ -3,7 +3,6 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_app_check/firebase_app_check.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:clocustomer/l10n/app_localizations.dart';
 import 'package:clocustomer/router/app_router.dart';
 import 'package:clocustomer/features/settings/view_model/locale_provider.dart';
@@ -12,7 +11,6 @@ import 'package:clocustomer/utils/app_colors.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  await MobileAds.instance.initialize();
 
   // App Check: debug provider for local dev.
   // Switch to AndroidPlayIntegrityProvider + AppleAppAttestProvider before releasing.

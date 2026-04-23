@@ -1,7 +1,6 @@
 import Flutter
 import UIKit
 import Firebase
-import google_mobile_ads
 
 @main
 @objc class AppDelegate: FlutterAppDelegate, FlutterImplicitEngineDelegate {
@@ -15,11 +14,5 @@ import google_mobile_ads
 
   func didInitializeImplicitFlutterEngine(_ engineBridge: FlutterImplicitEngineBridge) {
     GeneratedPluginRegistrant.register(with: engineBridge.pluginRegistry)
-    // Register native ad factory after engine (and plugins) are initialised
-    FLTGoogleMobileAdsPlugin.registerNativeAdFactory(
-      engineBridge.pluginRegistry,
-      factoryId: "listTile",
-      nativeAdFactory: ListTileNativeAdFactory()
-    )
   }
 }
