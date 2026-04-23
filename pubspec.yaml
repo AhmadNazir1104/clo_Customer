@@ -1,5 +1,5 @@
-name: clocustomer
-description: "DarziPro Customer App — view orders, measurements, and shop details."
+name: libaas
+description: "Libaas — Your tailor, your boutique, your marketplace."
 publish_to: 'none'
 
 version: 1.0.0+1

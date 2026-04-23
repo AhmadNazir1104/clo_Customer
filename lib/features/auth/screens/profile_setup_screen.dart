@@ -1,9 +1,9 @@
 import 'dart:io';
 
-import 'package:clocustomer/features/auth/view_model/auth_provider.dart';
-import 'package:clocustomer/features/auth/view_model/auth_state.dart';
-import 'package:clocustomer/utils/app_colors.dart';
-import 'package:clocustomer/utils/phone_utils.dart';
+import 'package:libaas/features/auth/view_model/auth_provider.dart';
+import 'package:libaas/features/auth/view_model/auth_state.dart';
+import 'package:libaas/utils/app_colors.dart';
+import 'package:libaas/utils/phone_utils.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

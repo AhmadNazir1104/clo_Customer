@@ -1,19 +1,19 @@
-import 'package:clocustomer/features/auth/screens/auth_gate_screen.dart';
-import 'package:clocustomer/features/auth/screens/otp_verification_screen.dart';
-import 'package:clocustomer/features/auth/screens/phone_input_screen.dart';
-import 'package:clocustomer/features/auth/screens/profile_setup_screen.dart';
-import 'package:clocustomer/features/chat/screens/chat_screen.dart';
-import 'package:clocustomer/features/chat/screens/chats_list_screen.dart';
-import 'package:clocustomer/features/measurement/screens/add_measurement_screen.dart';
-import 'package:clocustomer/features/home/screens/home_shell_screen.dart';
-import 'package:clocustomer/features/measurement/screens/measurement_view_screen.dart';
-import 'package:clocustomer/features/measurement/screens/measurements_home_screen.dart';
-import 'package:clocustomer/features/order/screens/order_detail_screen.dart';
-import 'package:clocustomer/features/order/screens/orders_list_screen.dart';
-import 'package:clocustomer/features/profile/screens/profile_screen.dart';
-import 'package:clocustomer/features/shop/screens/shop_detail_screen.dart';
-import 'package:clocustomer/model/measurement_entry_model.dart';
-import 'package:clocustomer/model/order_model.dart';
+import 'package:libaas/features/auth/screens/auth_gate_screen.dart';
+import 'package:libaas/features/auth/screens/otp_verification_screen.dart';
+import 'package:libaas/features/auth/screens/phone_input_screen.dart';
+import 'package:libaas/features/auth/screens/profile_setup_screen.dart';
+import 'package:libaas/features/chat/screens/chat_screen.dart';
+import 'package:libaas/features/chat/screens/chats_list_screen.dart';
+import 'package:libaas/features/measurement/screens/add_measurement_screen.dart';
+import 'package:libaas/features/home/screens/home_shell_screen.dart';
+import 'package:libaas/features/measurement/screens/measurement_view_screen.dart';
+import 'package:libaas/features/measurement/screens/measurements_home_screen.dart';
+import 'package:libaas/features/order/screens/order_detail_screen.dart';
+import 'package:libaas/features/order/screens/orders_list_screen.dart';
+import 'package:libaas/features/profile/screens/profile_screen.dart';
+import 'package:libaas/features/shop/screens/shop_detail_screen.dart';
+import 'package:libaas/model/measurement_entry_model.dart';
+import 'package:libaas/model/order_model.dart';
 import 'package:go_router/go_router.dart';
 
 final appRouter = GoRouter(

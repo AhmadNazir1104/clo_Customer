@@ -1,8 +1,8 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_riverpod/legacy.dart';
 
-import 'package:clocustomer/features/chat/repository/chat_repository.dart';
-import 'package:clocustomer/model/chat_message_model.dart';
+import 'package:libaas/features/chat/repository/chat_repository.dart';
+import 'package:libaas/model/chat_message_model.dart';
 
 final chatRepositoryProvider = Provider<ChatRepository>(
   (_) => ChatRepository(),

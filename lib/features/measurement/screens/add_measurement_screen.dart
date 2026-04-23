@@ -1,6 +1,6 @@
-import 'package:clocustomer/features/measurement/view_model/measurements_view_model.dart';
-import 'package:clocustomer/model/measurement_entry_model.dart';
-import 'package:clocustomer/utils/app_colors.dart';
+import 'package:libaas/features/measurement/view_model/measurements_view_model.dart';
+import 'package:libaas/model/measurement_entry_model.dart';
+import 'package:libaas/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

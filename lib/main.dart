@@ -3,10 +3,10 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_app_check/firebase_app_check.dart';
-import 'package:clocustomer/l10n/app_localizations.dart';
-import 'package:clocustomer/router/app_router.dart';
-import 'package:clocustomer/features/settings/view_model/locale_provider.dart';
-import 'package:clocustomer/utils/app_colors.dart';
+import 'package:libaas/l10n/app_localizations.dart';
+import 'package:libaas/router/app_router.dart';
+import 'package:libaas/features/settings/view_model/locale_provider.dart';
+import 'package:libaas/utils/app_colors.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

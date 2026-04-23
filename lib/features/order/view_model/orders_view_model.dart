@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:clocustomer/features/auth/view_model/auth_provider.dart';
-import 'package:clocustomer/features/auth/view_model/linked_shops_provider.dart';
-import 'package:clocustomer/model/order_model.dart';
+import 'package:libaas/features/auth/view_model/auth_provider.dart';
+import 'package:libaas/features/auth/view_model/linked_shops_provider.dart';
+import 'package:libaas/model/order_model.dart';
 
 /// Orders for a customer in one shop, realtime.
 final ordersProvider =

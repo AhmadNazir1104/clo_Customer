@@ -1,9 +1,9 @@
-import 'package:clocustomer/features/auth/view_model/auth_provider.dart';
-import 'package:clocustomer/features/auth/view_model/auth_state.dart';
-import 'package:clocustomer/features/settings/view_model/locale_provider.dart';
-import 'package:clocustomer/l10n/app_localizations.dart';
-import 'package:clocustomer/utils/app_colors.dart';
-import 'package:clocustomer/utils/phone_utils.dart';
+import 'package:libaas/features/auth/view_model/auth_provider.dart';
+import 'package:libaas/features/auth/view_model/auth_state.dart';
+import 'package:libaas/features/settings/view_model/locale_provider.dart';
+import 'package:libaas/l10n/app_localizations.dart';
+import 'package:libaas/utils/app_colors.dart';
+import 'package:libaas/utils/phone_utils.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';

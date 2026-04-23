@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:clocustomer/features/auth/view_model/auth_provider.dart';
-import 'package:clocustomer/features/auth/view_model/auth_state.dart';
-import 'package:clocustomer/utils/app_colors.dart';
+import 'package:libaas/features/auth/view_model/auth_provider.dart';
+import 'package:libaas/features/auth/view_model/auth_state.dart';
+import 'package:libaas/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';

@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.clocustomer"
+    namespace = "com.loopstackstudio.Libaas"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -22,7 +22,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "com.example.clocustomer"
+        applicationId = "com.loopstackstudio.Libaas"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion

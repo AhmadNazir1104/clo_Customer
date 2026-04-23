@@ -1,4 +1,4 @@
-package com.example.clocustomer
+package com.loopstackstudio.Libaas
 
 import io.flutter.embedding.android.FlutterActivity
 
