@@ -113,7 +113,7 @@ class _PhoneInputScreenState extends ConsumerState<PhoneInputScreen> {
         ),
         const SizedBox(width: 12),
         const Text(
-          'DarziPro',
+          'Libaas',
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.w700,

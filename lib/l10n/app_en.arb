@@ -1,6 +1,6 @@
 {
   "@@locale": "en",
-  "appName": "DarziPro",
+  "appName": "Libaas",
   "@appName": { "description": "App name" },
   "myOrders": "My Orders",
   "@myOrders": { "description": "Tab label for orders" },

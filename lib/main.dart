@@ -19,17 +19,17 @@ void main() async {
     providerApple: AppleDebugProvider(),
   );
 
-  runApp(const ProviderScope(child: DarziCustomerApp()));
+  runApp(const ProviderScope(child: LibaasApp()));
 }
 
-class DarziCustomerApp extends ConsumerWidget {
-  const DarziCustomerApp({super.key});
+class LibaasApp extends ConsumerWidget {
+  const LibaasApp({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final locale = ref.watch(localeProvider);
     return MaterialApp.router(
-      title: 'DarziPro',
+      title: 'Libaas',
       debugShowCheckedModeBanner: false,
       locale: locale,
       supportedLocales: const [Locale('en'), Locale('ur')],

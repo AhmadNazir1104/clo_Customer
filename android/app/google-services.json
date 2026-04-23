@@ -7,50 +7,25 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:215738743594:android:571e8606e85d01d56b3c53",
-        "android_client_info": {
-          "package_name": "com.example.clocustomer"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBNW9Q6XDtJm8IMgWijoiF0yDC2BOsAP3k"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:215738743594:android:b50877a2524ea2706b3c53",
-        "android_client_info": {
-          "package_name": "com.example.clotailer"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBNW9Q6XDtJm8IMgWijoiF0yDC2BOsAP3k"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:215738743594:android:1e95ec2acd08f32d6b3c53",
         "android_client_info": {
           "package_name": "com.example.tailer_app"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "215738743594-7193b4qpdv5tjm8lehqqr7cte5pfct37.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tailer_app",
+            "certificate_hash": "c832d8deec56d31d653d87dce9a55768487288e7"
+          }
+        },
+        {
+          "client_id": "215738743594-tnpavv8cc3q9hk39p6d867v275skjl88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBNW9Q6XDtJm8IMgWijoiF0yDC2BOsAP3k"
@@ -58,7 +33,107 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215738743594-tnpavv8cc3q9hk39p6d867v275skjl88.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "215738743594-7j1hdfgthigh5hshrsrb51qgbnmi3uda.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.darzipro.ownerapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215738743594:android:2926fd8ffba2a7d56b3c53",
+        "android_client_info": {
+          "package_name": "com.loopstackstudio.Libaas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215738743594-tnpavv8cc3q9hk39p6d867v275skjl88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNW9Q6XDtJm8IMgWijoiF0yDC2BOsAP3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215738743594-tnpavv8cc3q9hk39p6d867v275skjl88.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "215738743594-7j1hdfgthigh5hshrsrb51qgbnmi3uda.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.darzipro.ownerapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215738743594:android:837c70a9419159d96b3c53",
+        "android_client_info": {
+          "package_name": "com.loopstackstudios.darzipro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215738743594-08ihfhirlbn1frfhqbju86n6d0sqp2d9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.loopstackstudios.darzipro",
+            "certificate_hash": "cb284548d30bbf88687c14c92fddc253e5fd992f"
+          }
+        },
+        {
+          "client_id": "215738743594-4c231an7d8b4f6rlh59p85sjdpu0urr0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.loopstackstudios.darzipro",
+            "certificate_hash": "c832d8deec56d31d653d87dce9a55768487288e7"
+          }
+        },
+        {
+          "client_id": "215738743594-tnpavv8cc3q9hk39p6d867v275skjl88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNW9Q6XDtJm8IMgWijoiF0yDC2BOsAP3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215738743594-tnpavv8cc3q9hk39p6d867v275skjl88.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "215738743594-7j1hdfgthigh5hshrsrb51qgbnmi3uda.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.darzipro.ownerapp"
+              }
+            }
+          ]
         }
       }
     },
@@ -69,7 +144,20 @@
           "package_name": "com.loopstackstudios.tailer"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "215738743594-2qk1ma8ofacqq1stvmth7ktbelmpo4d9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.loopstackstudios.tailer",
+            "certificate_hash": "c832d8deec56d31d653d87dce9a55768487288e7"
+          }
+        },
+        {
+          "client_id": "215738743594-tnpavv8cc3q9hk39p6d867v275skjl88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBNW9Q6XDtJm8IMgWijoiF0yDC2BOsAP3k"
@@ -77,7 +165,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215738743594-tnpavv8cc3q9hk39p6d867v275skjl88.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "215738743594-7j1hdfgthigh5hshrsrb51qgbnmi3uda.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.darzipro.ownerapp"
+              }
+            }
+          ]
         }
       }
     }
