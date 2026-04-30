@@ -1,5 +1,5 @@
-import 'package:libaas/model/measurement_entry_model.dart';
-import 'package:libaas/utils/app_colors.dart';
+import 'package:khayyat/model/measurement_entry_model.dart';
+import 'package:khayyat/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';

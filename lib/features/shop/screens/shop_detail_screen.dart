@@ -1,6 +1,6 @@
-import 'package:libaas/features/shop/view_model/shop_view_model.dart';
-import 'package:libaas/l10n/app_localizations.dart';
-import 'package:libaas/utils/app_colors.dart';
+import 'package:khayyat/features/shop/view_model/shop_view_model.dart';
+import 'package:khayyat/l10n/app_localizations.dart';
+import 'package:khayyat/utils/app_colors.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

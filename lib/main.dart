@@ -3,33 +3,29 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_app_check/firebase_app_check.dart';
-import 'package:libaas/l10n/app_localizations.dart';
-import 'package:libaas/router/app_router.dart';
-import 'package:libaas/features/settings/view_model/locale_provider.dart';
-import 'package:libaas/utils/app_colors.dart';
+import 'package:khayyat/l10n/app_localizations.dart';
+import 'package:khayyat/router/app_router.dart';
+import 'package:khayyat/features/settings/view_model/locale_provider.dart';
+import 'package:khayyat/utils/app_colors.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-
-  // App Check: debug provider for local dev.
-  // Switch to AndroidPlayIntegrityProvider + AppleAppAttestProvider before releasing.
   await FirebaseAppCheck.instance.activate(
-    providerAndroid: AndroidDebugProvider(),
-    providerApple: AppleDebugProvider(),
+    providerAndroid: AndroidPlayIntegrityProvider(),
+    providerApple: AppleAppAttestProvider(),
   );
-
-  runApp(const ProviderScope(child: LibaasApp()));
+  runApp(const ProviderScope(child: KhayyatApp()));
 }
 
-class LibaasApp extends ConsumerWidget {
-  const LibaasApp({super.key});
+class KhayyatApp extends ConsumerWidget {
+  const KhayyatApp({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final locale = ref.watch(localeProvider);
     return MaterialApp.router(
-      title: 'Libaas',
+      title: 'Khayyat',
       debugShowCheckedModeBanner: false,
       locale: locale,
       supportedLocales: const [Locale('en'), Locale('ur')],

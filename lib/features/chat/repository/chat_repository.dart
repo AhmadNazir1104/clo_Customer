@@ -7,7 +7,7 @@ import 'package:flutter_image_compress/flutter_image_compress.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:uuid/uuid.dart';
 
-import 'package:libaas/model/chat_message_model.dart';
+import 'package:khayyat/model/chat_message_model.dart';
 
 class ChatRepository {
   final FirebaseFirestore _firestore;

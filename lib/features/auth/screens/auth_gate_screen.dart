@@ -1,6 +1,6 @@
-import 'package:libaas/features/auth/view_model/auth_provider.dart';
-import 'package:libaas/features/auth/view_model/linked_shops_provider.dart';
-import 'package:libaas/utils/phone_utils.dart';
+import 'package:khayyat/features/auth/view_model/auth_provider.dart';
+import 'package:khayyat/features/auth/view_model/linked_shops_provider.dart';
+import 'package:khayyat/utils/phone_utils.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';

@@ -1,6 +1,6 @@
-import 'package:libaas/features/auth/view_model/auth_provider.dart';
-import 'package:libaas/features/auth/view_model/auth_state.dart';
-import 'package:libaas/utils/app_colors.dart';
+import 'package:khayyat/features/auth/view_model/auth_provider.dart';
+import 'package:khayyat/features/auth/view_model/auth_state.dart';
+import 'package:khayyat/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -55,7 +55,7 @@ class _PhoneInputScreenState extends ConsumerState<PhoneInputScreen> {
     return Scaffold(
       backgroundColor: AppColors.background,
       body: SafeArea(
-        child: Padding(
+        child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(horizontal: 28),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -81,7 +81,7 @@ class _PhoneInputScreenState extends ConsumerState<PhoneInputScreen> {
               Form(key: _formKey, child: _buildPhoneField()),
               const SizedBox(height: 32),
               _buildButton(isLoading),
-              const Spacer(),
+              const SizedBox(height: 40),
               Center(
                 child: Padding(
                   padding: const EdgeInsets.only(bottom: 24),
@@ -113,7 +113,7 @@ class _PhoneInputScreenState extends ConsumerState<PhoneInputScreen> {
         ),
         const SizedBox(width: 12),
         const Text(
-          'Libaas',
+          'Khayyat',
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.w700,

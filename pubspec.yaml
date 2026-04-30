@@ -1,5 +1,5 @@
-name: libaas
-description: "Libaas — Your tailor, your boutique, your marketplace."
+name: khayyat
+description: "Khayyat — Your tailor, your boutique, your marketplace."
 publish_to: 'none'
 
 version: 1.0.0+1
@@ -38,7 +38,16 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+  flutter_launcher_icons: "^0.14.4"
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_images/app_icon3.png"
 
 flutter:
   uses-material-design: true
   generate: true
+
+  assets:
+    - assets/app_images/

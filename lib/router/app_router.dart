@@ -1,19 +1,19 @@
-import 'package:libaas/features/auth/screens/auth_gate_screen.dart';
-import 'package:libaas/features/auth/screens/otp_verification_screen.dart';
-import 'package:libaas/features/auth/screens/phone_input_screen.dart';
-import 'package:libaas/features/auth/screens/profile_setup_screen.dart';
-import 'package:libaas/features/chat/screens/chat_screen.dart';
-import 'package:libaas/features/chat/screens/chats_list_screen.dart';
-import 'package:libaas/features/measurement/screens/add_measurement_screen.dart';
-import 'package:libaas/features/home/screens/home_shell_screen.dart';
-import 'package:libaas/features/measurement/screens/measurement_view_screen.dart';
-import 'package:libaas/features/measurement/screens/measurements_home_screen.dart';
-import 'package:libaas/features/order/screens/order_detail_screen.dart';
-import 'package:libaas/features/order/screens/orders_list_screen.dart';
-import 'package:libaas/features/profile/screens/profile_screen.dart';
-import 'package:libaas/features/shop/screens/shop_detail_screen.dart';
-import 'package:libaas/model/measurement_entry_model.dart';
-import 'package:libaas/model/order_model.dart';
+import 'package:khayyat/features/auth/screens/auth_gate_screen.dart';
+import 'package:khayyat/features/auth/screens/otp_verification_screen.dart';
+import 'package:khayyat/features/auth/screens/phone_input_screen.dart';
+import 'package:khayyat/features/auth/screens/profile_setup_screen.dart';
+import 'package:khayyat/features/chat/screens/chat_screen.dart';
+import 'package:khayyat/features/chat/screens/chats_list_screen.dart';
+import 'package:khayyat/features/measurement/screens/add_measurement_screen.dart';
+import 'package:khayyat/features/home/screens/home_shell_screen.dart';
+import 'package:khayyat/features/measurement/screens/measurement_view_screen.dart';
+import 'package:khayyat/features/measurement/screens/measurements_home_screen.dart';
+import 'package:khayyat/features/order/screens/order_detail_screen.dart';
+import 'package:khayyat/features/order/screens/orders_list_screen.dart';
+import 'package:khayyat/features/profile/screens/profile_screen.dart';
+import 'package:khayyat/features/shop/screens/shop_detail_screen.dart';
+import 'package:khayyat/model/measurement_entry_model.dart';
+import 'package:khayyat/model/order_model.dart';
 import 'package:go_router/go_router.dart';
 
 final appRouter = GoRouter(

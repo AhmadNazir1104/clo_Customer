@@ -2,12 +2,12 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:libaas/features/auth/view_model/auth_provider.dart';
-import 'package:libaas/features/chat/view_model/chat_view_model.dart';
-import 'package:libaas/features/chat/widgets/voice_note_player.dart';
-import 'package:libaas/features/shop/view_model/shop_view_model.dart';
-import 'package:libaas/model/chat_message_model.dart';
-import 'package:libaas/utils/app_colors.dart';
+import 'package:khayyat/features/auth/view_model/auth_provider.dart';
+import 'package:khayyat/features/chat/view_model/chat_view_model.dart';
+import 'package:khayyat/features/chat/widgets/voice_note_player.dart';
+import 'package:khayyat/features/shop/view_model/shop_view_model.dart';
+import 'package:khayyat/model/chat_message_model.dart';
+import 'package:khayyat/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';

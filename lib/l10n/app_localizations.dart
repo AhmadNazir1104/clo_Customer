@@ -101,7 +101,7 @@ abstract class AppLocalizations {
   /// App name
   ///
   /// In en, this message translates to:
-  /// **'DarziPro'**
+  /// **'Khayyat'**
   String get appName;
 
   /// Tab label for orders

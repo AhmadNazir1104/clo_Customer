@@ -7,20 +7,12 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:215738743594:android:1e95ec2acd08f32d6b3c53",
+        "mobilesdk_app_id": "1:215738743594:android:98b4e041b7647a8a6b3c53",
         "android_client_info": {
-          "package_name": "com.example.tailer_app"
+          "package_name": "com.loopstackstudio.Khayyat"
         }
       },
       "oauth_client": [
-        {
-          "client_id": "215738743594-7193b4qpdv5tjm8lehqqr7cte5pfct37.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.tailer_app",
-            "certificate_hash": "c832d8deec56d31d653d87dce9a55768487288e7"
-          }
-        },
         {
           "client_id": "215738743594-tnpavv8cc3q9hk39p6d867v275skjl88.apps.googleusercontent.com",
           "client_type": 3
@@ -106,50 +98,6 @@
           "client_type": 1,
           "android_info": {
             "package_name": "com.loopstackstudios.darzipro",
-            "certificate_hash": "c832d8deec56d31d653d87dce9a55768487288e7"
-          }
-        },
-        {
-          "client_id": "215738743594-tnpavv8cc3q9hk39p6d867v275skjl88.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBNW9Q6XDtJm8IMgWijoiF0yDC2BOsAP3k"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "215738743594-tnpavv8cc3q9hk39p6d867v275skjl88.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "215738743594-7j1hdfgthigh5hshrsrb51qgbnmi3uda.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.darzipro.ownerapp"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:215738743594:android:2a000ba8083cf3b16b3c53",
-        "android_client_info": {
-          "package_name": "com.loopstackstudios.tailer"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "215738743594-2qk1ma8ofacqq1stvmth7ktbelmpo4d9.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.loopstackstudios.tailer",
             "certificate_hash": "c832d8deec56d31d653d87dce9a55768487288e7"
           }
         },

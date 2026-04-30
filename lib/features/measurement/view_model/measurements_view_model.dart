@@ -2,8 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:libaas/model/customer_model.dart';
-import 'package:libaas/model/measurement_entry_model.dart';
+import 'package:khayyat/model/customer_model.dart';
+import 'package:khayyat/model/measurement_entry_model.dart';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Providers

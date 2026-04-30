@@ -1,10 +1,10 @@
-import 'package:libaas/features/auth/view_model/auth_provider.dart';
-import 'package:libaas/features/auth/view_model/linked_shops_provider.dart';
-import 'package:libaas/features/measurement/view_model/measurements_view_model.dart';
-import 'package:libaas/features/shop/view_model/shop_view_model.dart';
-import 'package:libaas/l10n/app_localizations.dart';
-import 'package:libaas/model/measurement_entry_model.dart';
-import 'package:libaas/utils/app_colors.dart';
+import 'package:khayyat/features/auth/view_model/auth_provider.dart';
+import 'package:khayyat/features/auth/view_model/linked_shops_provider.dart';
+import 'package:khayyat/features/measurement/view_model/measurements_view_model.dart';
+import 'package:khayyat/features/shop/view_model/shop_view_model.dart';
+import 'package:khayyat/l10n/app_localizations.dart';
+import 'package:khayyat/model/measurement_entry_model.dart';
+import 'package:khayyat/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
