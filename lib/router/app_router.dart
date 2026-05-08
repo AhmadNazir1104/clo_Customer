@@ -4,6 +4,8 @@ import 'package:khayyat/features/auth/screens/phone_input_screen.dart';
 import 'package:khayyat/features/auth/screens/profile_setup_screen.dart';
 import 'package:khayyat/features/chat/screens/chat_screen.dart';
 import 'package:khayyat/features/chat/screens/chats_list_screen.dart';
+import 'package:khayyat/features/discover/screens/discover_screen.dart';
+import 'package:khayyat/features/discover/screens/tailor_detail_screen.dart';
 import 'package:khayyat/features/measurement/screens/add_measurement_screen.dart';
 import 'package:khayyat/features/home/screens/home_shell_screen.dart';
 import 'package:khayyat/features/measurement/screens/measurement_view_screen.dart';
@@ -11,9 +13,11 @@ import 'package:khayyat/features/measurement/screens/measurements_home_screen.da
 import 'package:khayyat/features/order/screens/order_detail_screen.dart';
 import 'package:khayyat/features/order/screens/orders_list_screen.dart';
 import 'package:khayyat/features/profile/screens/profile_screen.dart';
+import 'package:khayyat/features/review/screens/leave_review_screen.dart';
 import 'package:khayyat/features/shop/screens/shop_detail_screen.dart';
 import 'package:khayyat/model/measurement_entry_model.dart';
 import 'package:khayyat/model/order_model.dart';
+import 'package:khayyat/model/shop_model.dart';
 import 'package:go_router/go_router.dart';
 
 final appRouter = GoRouter(
@@ -45,11 +49,12 @@ final appRouter = GoRouter(
       path: '/home',
       redirect: (context, state) => '/home/orders',
     ),
-    // ── Home shell (bottom nav) ────────────────────────────────────────
+    // ── Home shell (bottom nav — 5 tabs) ──────────────────────────────
     StatefulShellRoute.indexedStack(
       builder: (context, state, navigationShell) =>
           HomeShellScreen(navigationShell: navigationShell),
       branches: [
+        // Tab 0 — Orders
         StatefulShellBranch(
           routes: [
             GoRoute(
@@ -58,6 +63,7 @@ final appRouter = GoRouter(
             ),
           ],
         ),
+        // Tab 1 — Measurements
         StatefulShellBranch(
           routes: [
             GoRoute(
@@ -66,6 +72,16 @@ final appRouter = GoRouter(
             ),
           ],
         ),
+        // Tab 2 — Discover
+        StatefulShellBranch(
+          routes: [
+            GoRoute(
+              path: '/home/discover',
+              builder: (context, state) => const DiscoverScreen(),
+            ),
+          ],
+        ),
+        // Tab 3 — Chats
         StatefulShellBranch(
           routes: [
             GoRoute(
@@ -74,6 +90,7 @@ final appRouter = GoRouter(
             ),
           ],
         ),
+        // Tab 4 — Profile
         StatefulShellBranch(
           routes: [
             GoRoute(
@@ -84,7 +101,7 @@ final appRouter = GoRouter(
         ),
       ],
     ),
-    // ── Detail screens ─────────────────────────────────────────────────
+    // ── Orders ────────────────────────────────────────────────────────
     GoRoute(
       path: '/orders/detail',
       builder: (context, state) {
@@ -92,6 +109,7 @@ final appRouter = GoRouter(
         return OrderDetailScreen(order: order);
       },
     ),
+    // ── Shops ─────────────────────────────────────────────────────────
     GoRoute(
       path: '/shops/:shopId',
       builder: (context, state) {
@@ -99,6 +117,24 @@ final appRouter = GoRouter(
         return ShopDetailScreen(shopId: shopId);
       },
     ),
+    // ── Discover ──────────────────────────────────────────────────────
+    GoRoute(
+      path: '/discover/:shopId',
+      builder: (context, state) {
+        final shop = state.extra as ShopModel;
+        return TailorDetailScreen(shop: shop);
+      },
+    ),
+    // ── Review ────────────────────────────────────────────────────────
+    GoRoute(
+      path: '/review/:shopId',
+      builder: (context, state) {
+        final shopId   = state.pathParameters['shopId']!;
+        final shopName = state.extra as String? ?? '';
+        return LeaveReviewScreen(shopId: shopId, shopName: shopName);
+      },
+    ),
+    // ── Chat ──────────────────────────────────────────────────────────
     GoRoute(
       path: '/chat/:shopId',
       builder: (context, state) {
@@ -106,6 +142,7 @@ final appRouter = GoRouter(
         return ChatScreen(shopId: shopId);
       },
     ),
+    // ── Measurements ──────────────────────────────────────────────────
     GoRoute(
       path: '/measurements/add',
       builder: (context, state) => const AddMeasurementScreen(),

@@ -204,6 +204,37 @@ class OrderDetailScreen extends ConsumerWidget {
               ],
             ),
           ),
+          // ── Leave Review (only for delivered orders) ──────────────
+          if (order.status == OrderStatus.delivered) ...[
+            const SizedBox(height: 20),
+            shop.whenOrNull(
+              data: (s) => s != null
+                  ? SizedBox(
+                      width: double.infinity,
+                      height: 52,
+                      child: OutlinedButton.icon(
+                        onPressed: () => context.push(
+                          '/review/${order.shopId}',
+                          extra: s.name,
+                        ),
+                        style: OutlinedButton.styleFrom(
+                          side: const BorderSide(
+                              color: AppColors.navy, width: 1.5),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(14)),
+                          foregroundColor: AppColors.navy,
+                        ),
+                        icon: const Icon(Icons.star_border_rounded, size: 20),
+                        label: const Text(
+                          'Leave a Review',
+                          style: TextStyle(
+                              fontSize: 15, fontWeight: FontWeight.w700),
+                        ),
+                      ),
+                    )
+                  : const SizedBox.shrink(),
+            ) ?? const SizedBox.shrink(),
+          ],
         ],
       ),
     );

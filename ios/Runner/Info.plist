@@ -66,6 +66,8 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Khayyat uses your location to show nearby tailors and boutiques.</string>
 	<key>NSCameraUsageDescription</key>
 	<string>This app needs camera access to capture photos for chat.</string>
 	<key>NSMicrophoneUsageDescription</key>

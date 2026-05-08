@@ -18,10 +18,22 @@ class HomeShellScreen extends ConsumerWidget {
         onDestinationSelected: navigationShell.goBranch,
         backgroundColor: AppColors.white,
         destinations: [
-          NavigationDestination(icon: const Icon(Icons.list_alt), label: l10n.myOrders),
-          NavigationDestination(icon: const Icon(Icons.straighten), label: l10n.measurements),
-          NavigationDestination(icon: const Icon(Icons.chat_bubble_outline), label: 'Chats'),
-          NavigationDestination(icon: const Icon(Icons.person), label: l10n.profile),
+          NavigationDestination(
+              icon: const Icon(Icons.list_alt),
+              label: l10n.myOrders),
+          NavigationDestination(
+              icon: const Icon(Icons.straighten),
+              label: l10n.measurements),
+          NavigationDestination(
+              icon: const Icon(Icons.explore_outlined),
+              selectedIcon: const Icon(Icons.explore),
+              label: 'Discover'),
+          NavigationDestination(
+              icon: const Icon(Icons.chat_bubble_outline),
+              label: 'Chats'),
+          NavigationDestination(
+              icon: const Icon(Icons.person),
+              label: l10n.profile),
         ],
       ),
     );
